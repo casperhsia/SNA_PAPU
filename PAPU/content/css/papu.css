@@ -1,0 +1,18 @@
+body{
+	background: url(../picture/wood_006.png);
+	background-repeat: repeat;
+}
+
+div.opacity{
+	background: rgba(0%,0%,0%,0.6);
+}
+/*
+div.mapbox{
+	width:700px; height:800px
+}
+
+img.map-part{
+	width: 80%;
+	height: 80%;
+}
+*/
