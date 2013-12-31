@@ -1,10 +1,10 @@
 body{
-	background: url(../picture/wood_006.png);
+	background: url(../picture/map2/WoodBackground.png);
 	background-repeat: repeat;
 }
 
 div.opacity{
-	background: rgba(0%,0%,0%,0.6);
+	background: rgba(0%,0%,0%,0.3);
 }
 /*
 div.mapbox{

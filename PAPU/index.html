@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,10 +30,18 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+      
   </head>
 
   <body style="overflow-x: auto; overflow-y: hidden;">
-
+    <style type=text/css> 
+        body { font-family: 微軟正黑體,verdana,Times New Roman,新細明體;}
+        A{color:black}
+        A:link {color: white}
+        A:visited {color: red}
+        A:active {color: red}
+        A:hover {color: white}
+    </style>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -41,7 +51,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img src = "content/picture/icon.png" width="60" height="60" style="position: absolute; top:5px; left: 5px;">
+          <!--<img src = "content/picture/icon.png" width="40" height="40" style="position: absolute; top:5px; left: 20px;">-->
           <a class="navbar-brand" href="#">PAPU!</a>
         </div>
         <div class="collapse navbar-collapse">
@@ -49,6 +59,7 @@
             <li id="fb-login-in" class="active"><a href="#">FB login</a></li>
             <li><a href="#paTemp">PA!</a></li>
             <li><a href="#myModal" data-toggle="modal">PU!</a></li>
+            <li><img id="my-profile-picture" class="img-thumbnail" src="" alt=""></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -77,30 +88,43 @@
       <div class="col-md-8">
          <div class="starter-template mapbox">          
           <div style="position: relative; width: 1000px; height: 1000px; top:0px; left: 0px;">
-            <img src = "content/picture/map/background.png" alt="mpbg" width="600" height="600" style="position: absolute; top:0px; left:0px;">
-            <img src = "content/picture/map/Taipei.png" class='Taipei animated css'>
-            <img src = "content/picture/map/Taoyuan.png" class='Taoyuan animated css'>
-            <img src = "content/picture/map/Ilan.png" class='Ilan animated css'>
-            <img src = "content/picture/map/Hsinchu.png" class='Hsinchu animated css'>
-            <img src = "content/picture/map/Miaoli.png" class='Miaoli animated css'>
-            <img src = "content/picture/map/Taichung.png" class='Taichung animated css'>
-            <img src = "content/picture/map/Hualien.png" class='Hualien animated css'>
-            <img src = "content/picture/map/Changhua.png" class='Changhua animated css'>
-            <img src = "content/picture/map/Nantou.png" class='Nantou animated css'>
-            <img src = "content/picture/map/Yunlin.png" class='Yunlin animated css'>
-            <img src = "content/picture/map/Chiayi.png" class='Chiayi animated css'>
-            <img src = "content/picture/map/Tainan.png" class='Tainan animated css'>
-            <img src = "content/picture/map/Kaohsiung.png" class='Kaohsiung animated css'>
-            <img src = "content/picture/map/Pingtung.png" class='Pingtung animated css'>
-            <img src = "content/picture/map/Taitung.png" class='Taitung animated css'>
-            <img src = "content/picture/map/Penghu.png" class='Penghu animated css'> 
+            <img src = "content/picture/map2/background.png" alt="mpbg" width="600" height="600" style="position: absolute; top:0px; left:10px;">
+            <img src = "content/picture/map2/Taipei.png" class='Taipei animated css'>
+            <img src = "content/picture/map2/Taoyuan.png" class='Taoyuan animated css'>
+            <img src = "content/picture/map2/Ilan.png" class='Ilan animated css'>
+            <img src = "content/picture/map2/Hsinchu.png" class='Hsinchu animated css'>
+            <img src = "content/picture/map2/Miaoli.png" class='Miaoli animated css'>
+            <img src = "content/picture/map2/Taichung.png" class='Taichung animated css'>
+            <img src = "content/picture/map2/Hualien.png" class='Hualien animated css'>
+            <img src = "content/picture/map2/Changhua.png" class='Changhua animated css'>
+            <img src = "content/picture/map2/Nantou.png" class='Nantou animated css'>
+            <img src = "content/picture/map2/Yunlin.png" class='Yunlin animated css'>
+            <img src = "content/picture/map2/Chiayi.png" class='Chiayi animated css'>
+            <img src = "content/picture/map2/Tainan.png" class='Tainan animated css'>
+            <img src = "content/picture/map2/Kaohsiung.png" class='Kaohsiung animated css'>
+            <img src = "content/picture/map2/Pingtung.png" class='Pingtung animated css'>
+            <img src = "content/picture/map2/Taitung.png" class='Taitung animated css'>
           </div><!--/.container-->
         </div>
       </div>
       <div class="col-md-4">
         <div class="starter-template">
-          <h1>scroll bar here! by cyyang</h1>
-          <p class="lead">that's it, I think.</p>
+            <img src = "content/picture/map2/scorllbar.png" alt="scorllbg" width="178" height="400" style="position: absolute; top:60px; left:0px;">
+            <div style="position: absolute; top:130px; left:45px;">
+                <div class="row" style="font-color:white">
+                    <a style="font-size:30px"><b>PA!</b></a>
+                </div><div class="row">
+                    <a href="#myModal" data-toggle="modal" style="font-size:30px"><b>PU!</b></a>
+                </div><div class="row">
+                    <a style="font-size:30px"><b>Friends</b></a>
+                </div><div class="row">
+                    <a style="font-size:30px"><b>Profile</b></a>
+                </div><div class="row">
+                    <a style="font-size:30px"><b>Ranking</b></a>
+                </div><div class="row">
+                    <a style="font-size:30px"><b>Quota</b></a>
+                </div>
+            </div>
         </div>
       </div>
 
@@ -184,6 +208,41 @@
                              }, {scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends,friends_photos,email'});
                       }
             });
+            
+            var fetch_my_profile = function () {
+                /*
+                Fetching profile information.
+                For more detail, please vist the following url:
+
+                (Graph API: User documentation)
+                https://developers.facebook.com/docs/graph-api/reference/user/
+                */
+                FB.api('/me', function(response) {
+                    var my_name = response.name;
+                    var my_gender = response.gender;
+                    var my_username = response.username;
+                    var my_facebook_id = response.id;
+
+                    $("#my-profile-name").html(my_name);
+                    $("#my-profile-gender").html(my_gender);
+                    $("#my-profile-username").html(my_username);
+                    $("#my-profile-facebook-id").html(my_facebook_id);
+                });
+
+                /*
+                Fetching profile picture from Facebook.
+                For more detail, please visit the following url:
+
+                (Graph API: User/Picture reference)
+                https://developers.facebook.com/docs/graph-api/reference/user/picture/
+                */
+                FB.api('/me/picture?width=250', function(response) {
+                    var my_picture_url = response.data.url;
+                
+                    $("#my-profile-picture").attr('src', my_picture_url);
+                });
+            };
+            
         };
     </script>
 
