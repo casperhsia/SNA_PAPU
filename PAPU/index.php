@@ -85,12 +85,12 @@
       <div class="col-md-8">
          <div class="starter-template mapbox">          
           <div style="position: relative; width: 1000px; height: 1000px; top:0px; left: 0px;">
-            <img id ="myPhoto" style="position: absolute; top: 45px; left: 390px; z-index: 20;" src = "logo/papu/sizes/papu-24.png">
+            <img id ="myPhoto" style="position: absolute; top: 69.3px; left: 417.3px; z-index: 20;" src = "logo/papu/sizes/papu-24.png">
             <img src = "content/picture/map2/background.png" alt="mpbg" width="600" height="600" style="position: absolute; top:0px; left:10px;">
-            <img id ="Taipei" Title="台北" src = "content/picture/map2/Taipei.png" onClick="taipei()" class='Taipei animated css'>
-            <img id ="Taoyuan" Title="桃園" src = "content/picture/map2/Taoyuan.png" onClick="taoyuan()" class='Taoyuan animated css'>
-            <img id ="Ilan" Title="宜蘭" src = "content/picture/map2/Ilan.png" onClick="ilan()" class='Ilan animated css'>
-            <img id ="Hsinchu" Title="新竹" src = "content/picture/map2/Hsinchu.png" onClick="hsinchu()" class='Hsinchu animated css'>
+            <img id ="Taipei" Title="台北" src = "content/picture/map2/Taipei.png" onmouseover="taipeimouseover()" onClick="taipei()" class='Taipei animated css'>
+            <img id ="Taoyuan" Title="桃園" src = "content/picture/map2/Taoyuan.png"nmouseover="taipeimouseover()" onClick="taoyuan()" class='Taoyuan animated css'>
+            <img id ="Ilan" Title="宜蘭" src = "content/picture/map2/Ilan.png"nmouseover="taipeimouseover()" onClick="ilan()" class='Ilan animated css'>
+            <img id ="Hsinchu" Title="新竹" src = "content/picture/map2/Hsinchu.png"nmouseover="taipeimouseover()" onClick="hsinchu()" class='Hsinchu animated css'>
             <img id ="Miaoli" Title="苗栗" src = "content/picture/map2/Miaoli.png" onClick="miaoli()" class='Miaoli animated css'>
             <img id ="Taichung" Title="台中" src = "content/picture/map2/Taichung.png" onClick="taichung()" class='Taichung animated css'>
             <img id ="Hualien" Title="花蓮" src = "content/picture/map2/Hualien.png" onClick="hualien()" class='Hualien animated css'>
@@ -147,76 +147,135 @@
 
     <script type="text/javascript">
       function taipei(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Taipei").offsetTop+(document.getElementById("Taipei").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Taipei").offsetLeft+(document.getElementById("Taipei").offsetWidth/3)+"px";
+        if(document.getElementById("Taipei").style.opacity==1||document.getElementById("Taipei").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Taipei").offsetTop+(document.getElementById("Taipei").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Taipei").offsetLeft+(document.getElementById("Taipei").offsetWidth/3)+"px";
+        }
+      }
+      function taipeimouseover(){
+        document.getElementById("Hsinchu").style.opacity = "0.4";
+        document.getElementById("Miaoli").style.opacity = "0.4";
+        document.getElementById("Taichung").style.opacity = "0.4";
+        document.getElementById("Hualien").style.opacity = "0.4";
+        document.getElementById("Changhua").style.opacity = "0.4";
+        document.getElementById("Nantou").style.opacity = "0.4";
+        document.getElementById("Yunlin").style.opacity = "0.4";
+        document.getElementById("Chiayi").style.opacity = "0.4";
+        document.getElementById("Tainan").style.opacity = "0.4";
+        document.getElementById("Kaohsiung").style.opacity = "0.4";
+        document.getElementById("Pingtung").style.opacity = "0.4";
+        document.getElementById("Taitung").style.opacity = "0.4";
       }
       function taoyuan(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Taoyuan").offsetTop+(document.getElementById("Taoyuan").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Taoyuan").offsetLeft+(document.getElementById("Taoyuan").offsetWidth/3)+"px";
+        if(document.getElementById("Taoyuan").style.opacity==1||document.getElementById("Taoyuan").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Taoyuan").offsetTop+(document.getElementById("Taoyuan").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Taoyuan").offsetLeft+(document.getElementById("Taoyuan").offsetWidth/3)+"px";
+        }
       }
       function ilan(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Ilan").offsetTop+(document.getElementById("Ilan").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Ilan").offsetLeft+(document.getElementById("Ilan").offsetWidth/3)+"px";
+        if(document.getElementById("Ilan").style.opacity==1||document.getElementById("Ilan").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Ilan").offsetTop+(document.getElementById("Ilan").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Ilan").offsetLeft+(document.getElementById("Ilan").offsetWidth/3)+"px";
+        }
       }
 
       function hsinchu(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Hsinchu").offsetTop+(document.getElementById("Hsinchu").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Hsinchu").offsetLeft+(document.getElementById("Hsinchu").offsetWidth/3)+"px";
+        if(document.getElementById("Hsinchu").style.opacity==1||document.getElementById("Hsinchu").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Hsinchu").offsetTop+(document.getElementById("Hsinchu").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Hsinchu").offsetLeft+(document.getElementById("Hsinchu").offsetWidth/3)+"px";
+        }
       }
 
       function miaoli(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Miaoli").offsetTop+(document.getElementById("Miaoli").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Miaoli").offsetLeft+(document.getElementById("Miaoli").offsetWidth/3)+"px";
+        if(document.getElementById("Miaoli").style.opacity==1||document.getElementById("Miaoli").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Miaoli").offsetTop+(document.getElementById("Miaoli").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Miaoli").offsetLeft+(document.getElementById("Miaoli").offsetWidth/3)+"px";
+        }
       }
 
       function taichung(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Taichung").offsetTop+(document.getElementById("Taichung").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Taichung").offsetLeft+(document.getElementById("Taichung").offsetHeight/3)+"px";
+        if(document.getElementById("Taichung").style.opacity==1||document.getElementById("Taichung").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Taichung").offsetTop+(document.getElementById("Taichung").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Taichung").offsetLeft+(document.getElementById("Taichung").offsetHeight/3)+"px";
+        }
       }
 
       function hualien(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Hualien").offsetTop+(document.getElementById("Hualien").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Hualien").offsetLeft+(document.getElementById("Hualien").offsetWidth/3)+"px";
+        if(document.getElementById("Hualien").style.opacity==1||document.getElementById("Hualien").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Hualien").offsetTop+(document.getElementById("Hualien").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Hualien").offsetLeft+(document.getElementById("Hualien").offsetWidth/3)+"px";
+        }
       }
 
       function changhua(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Changhua").offsetTop+(document.getElementById("Changhua").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Changhua").offsetLeft+(document.getElementById("Changhua").offsetWidth/3)+"px";
+        if(document.getElementById("Changhua").style.opacity==1||document.getElementById("Changhua").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Changhua").offsetTop+(document.getElementById("Changhua").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Changhua").offsetLeft+(document.getElementById("Changhua").offsetWidth/3)+"px";
+        }
       }
       
       function nantou(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Nantou").offsetTop+(document.getElementById("Nantou").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Nantou").offsetLeft+(document.getElementById("Nantou").offsetWidth/3)+"px";
+        if(document.getElementById("Nantou").style.opacity==1||document.getElementById("Nantou").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Nantou").offsetTop+(document.getElementById("Nantou").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Nantou").offsetLeft+(document.getElementById("Nantou").offsetWidth/3)+"px";
+        }
       }
 
       function yunlin(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Yunlin").offsetTop+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Yunlin").offsetLeft+(document.getElementById("Yunlin").offsetWidth/3)+"px";
+        if(document.getElementById("Yunlin").style.opacity==1||document.getElementById("Yunlin").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Yunlin").offsetTop+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Yunlin").offsetLeft+(document.getElementById("Yunlin").offsetWidth/3)+"px";
+        }
       }
       
       function chiayi(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Chiayi").offsetTop+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Chiayi").offsetLeft+(document.getElementById("Chiayi").offsetWidth/3)+"px";
+        if(document.getElementById("Chiayi").style.opacity==1||document.getElementById("Chiayi").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Chiayi").offsetTop+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Chiayi").offsetLeft+(document.getElementById("Chiayi").offsetWidth/3)+"px";
+        }
       }
 
       function tainan(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Tainan").offsetTop+(document.getElementById("Tainan").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Tainan").offsetLeft+(document.getElementById("Tainan").offsetWidth/3)+"px";
+        if(document.getElementById("Tainan").style.opacity==1||document.getElementById("Tainan").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Tainan").offsetTop+(document.getElementById("Tainan").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Tainan").offsetLeft+(document.getElementById("Tainan").offsetWidth/3)+"px";
+        }
       }
       
       function kaohsiung(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Kaohsiung").offsetTop+(document.getElementById("Kaohsiung").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Kaohsiung").offsetLeft+(document.getElementById("Kaohsiung").offsetWidth/3)+"px";
+        if(document.getElementById("Kaohsiung").style.opacity==1||document.getElementById("Kaohsiung").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Kaohsiung").offsetTop+(document.getElementById("Kaohsiung").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Kaohsiung").offsetLeft+(document.getElementById("Kaohsiung").offsetWidth/3)+"px";
+        }
       }
 
       function pingtung(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Pingtung").offsetTop+(document.getElementById("Pingtung").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Pingtung").offsetLeft+(document.getElementById("Pingtung").offsetWidth/3)+"px";
+        if(document.getElementById("Pingtung").style.opacity==1||document.getElementById("Pingtung").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Pingtung").offsetTop+(document.getElementById("Pingtung").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Pingtung").offsetLeft+(document.getElementById("Pingtung").offsetWidth/3)+"px";
+        }
       }
       
       function taitung(){
-        document.getElementById("myPhoto").style.top = document.getElementById("Taitung").offsetTop+(document.getElementById("Taitung").offsetHeight/3)+"px";
-        document.getElementById("myPhoto").style.left = document.getElementById("Taitung").offsetLeft+(document.getElementById("Taitung").offsetWidth/3)+"px";
+        if(document.getElementById("Taitung").style.opacity==1||document.getElementById("Taitung").style.opacity=="")
+        {
+          document.getElementById("myPhoto").style.top = document.getElementById("Taitung").offsetTop+(document.getElementById("Taitung").offsetHeight/3)+"px";
+          document.getElementById("myPhoto").style.left = document.getElementById("Taitung").offsetLeft+(document.getElementById("Taitung").offsetWidth/3)+"px";
+        }
       }
     </script>
 
