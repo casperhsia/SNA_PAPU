@@ -1,6 +1,4 @@
-﻿
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -222,6 +220,21 @@
       }
     </script>
 
+<?php
+  // Remember to copy files from the SDK's src/ directory to a
+  // directory in your application on the server, such as php-sdk/
+  require_once('php-sdk/facebook.php');
+
+  $config = array(
+    'appId' => '599502590123242',
+    'secret' => '9cddb4ed5631ae8a5cb28291ea8324f4',
+    'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
+  );
+
+  $facebook = new Facebook($config);
+  $user_id = $facebook->getUser();
+?>
+
     <script>
       window.fbAsyncInit = function() {
           // init the FB JS SDK
@@ -275,7 +288,7 @@
                                 alert('login failed!');
                             }
                         }, {
-                            scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends,friends_photos,email'
+                            scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends'
                         });
                    }
 
@@ -291,7 +304,7 @@
                             $("#my-login-message").html("You're logged in.");
                       } else {
                             FB.login(function(response) {                        
-                             }, {scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends,friends_photos,email'});
+                             }, {scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends'});
                       }
             });
             
