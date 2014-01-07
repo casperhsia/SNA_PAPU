@@ -202,7 +202,7 @@
                                 alert('login failed!');
                             }
                         }, {
-                            scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends,friends_photos,email'
+                            scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends'
                         });
                    }
 
@@ -218,7 +218,7 @@
                             $("#my-login-message").html("You're logged in.");
                       } else {
                             FB.login(function(response) {                        
-                             }, {scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends,friends_photos,email'});
+                             }, {scope: 'publish_stream,user_hometown,user_location,user_photos,user_friends'});
                       }
             });
             
